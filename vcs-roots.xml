@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-roots modification-check-interval="60" quiet-period="60">
+  <vcs-root id="1" name="Git Java" type="jetbrains.git">
+    <scope level="project" project-id="project2" />
+    <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+    <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+    <param name="agentGitPath" value="C:\Program Files (x86)\Git\bin" />
+    <param name="authMethod" value="PRIVATE_KEY_FILE" />
+    <param name="branch" value="master" />
+    <param name="ignoreKnownHosts" value="true" />
+    <param name="privateKeyPath" value="%git.private%" />
+    <param name="submoduleCheckout" value="CHECKOUT" />
+    <param name="url" value="git@github.com:comunity/Client.git" />
+    <param name="usernameStyle" value="USERID" />
+  </vcs-root>
+  <vcs-root id="3" name="Git Platform" type="jetbrains.git">
+    <scope level="project" project-id="project12" />
+    <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+    <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+    <param name="agentGitPath" value="%build.git.path%" />
+    <param name="authMethod" value="PRIVATE_KEY_FILE" />
+    <param name="branch" value="master" />
+    <param name="ignoreKnownHosts" value="true" />
+    <param name="privateKeyPath" value="%build.privatekey%" />
+    <param name="submoduleCheckout" value="CHECKOUT" />
+    <param name="url" value="%build.git.PlatformServices.Url.rossim%" />
+    <param name="usernameStyle" value="USERID" />
+  </vcs-root>
+  <vcs-root id="6" name="Git Java Clients" type="jetbrains.git">
+    <scope level="project" project-id="project13" />
+    <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+    <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+    <param name="agentGitPath" value="C:\Program Files (x86)\Git\bin\git.exe" />
+    <param name="authMethod" value="PRIVATE_KEY_FILE" />
+    <param name="branch" value="master" />
+    <param name="ignoreKnownHosts" value="true" />
+    <param name="privateKeyPath" value="C:\Users\Administrator\.ssh\platform_rsa" />
+    <param name="submoduleCheckout" value="CHECKOUT" />
+    <param name="url" value="git@github.com:comunity/Client.git" />
+    <param name="usernameStyle" value="USERID" />
+  </vcs-root>
+</vcs-roots>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project SYSTEM "../project-config.dtd">
+
+<project id="project13">
+  <parameters />
+  <build-type id="bt18" name="Build">
+    <description />
+    <settings>
+      <parameters />
+      <build-runners>
+        <runner id="RUNNER_2" name="BlackBerry Old" type="Ant">
+          <parameters>
+            <param name="build-file-path" value="C:\Users\Administrator\Documents\Java Clients\Java\BlackBerryOld\OdpOld\build.xml" />
+            <param name="target" value="sign" />
+            <param name="target.jdk.home" value="C:\Program Files (x86)\Java\jre7\bin" />
+            <param name="teamcity.coverage.emma.include.source" value="true" />
+            <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+            <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          </parameters>
+        </runner>
+        <runner id="RUNNER_6" name="Blackberry Touch" type="Ant">
+          <parameters>
+            <param name="build-file-path" value="C:\Users\Administrator\Documents\Java Clients\Java\BlackBerry\ComUnityOdp\build.xml" />
+            <param name="target" value="sign" />
+            <param name="target.jdk.home" value="C:\Program Files (x86)\Java\jre7\bin" />
+            <param name="teamcity.coverage.emma.include.source" value="true" />
+            <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+            <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          </parameters>
+        </runner>
+      </build-runners>
+      <vcs-settings checkout-mode="MANUAL" labeling-type="SUCCESSFUL_ONLY" labeling-pattern="build-%system.build.number%">
+        <vcs-entry-ref root-id="6" set-label="true" />
+      </vcs-settings>
+      <requirements />
+      <build-triggers />
+      <cleanup />
+    </settings>
+  </build-type>
+</project>
+

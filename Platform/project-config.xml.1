@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project SYSTEM "../project-config.dtd">
+
+<project id="project12">
+  <description>ComUnity Platform</description>
+  <parameters />
+  <build-type id="bt17" name="Build">
+    <description />
+    <settings>
+      <options>
+        <option name="cleanBuild" value="true" />
+      </options>
+      <parameters>
+        <param name="build.file.directory" value="C:\Users\Administrator\Documents\Platform\" />
+        <param name="build.file.projectName" value="Web\Web.csproj" />
+        <param name="build.git.Client.Url.rossim" value="git@github.com:rossim/Client.git" />
+        <param name="build.git.Client.comunity" value="git@github.com:comunity/Client.git" />
+        <param name="build.git.PlatformServices.Url.comunity" value="git@github.com:comunity/PlatformServices.git" />
+        <param name="build.git.PlatformServices.Url.rossim" value="git@github.com:rossim/PlatformServices.git" />
+        <param name="build.git.path" value="C:\Program Files (x86)\Git\bin" />
+        <param name="build.path" value="C:\Users\Administrator\Documents\Platform\Platform.sln" />
+        <param name="build.privatekey" value="C:\Users\Administrator\.ssh\platform_rsa" />
+        <param name="system.AllowUntrustedCertificate" value="true" />
+        <param name="system.Configuration" value="Release" />
+        <param name="system.CreatePackageOnPublish" value="true" />
+        <param name="system.DeployIISAppPath" value="Default Web Site/Comunity" />
+        <param name="system.DeployOnBuild" value="true" />
+        <param name="system.DeployTarget" value="MSDeployPublish" />
+        <param name="system.ExcludeApp_Data" value="false" />
+        <param name="system.MSDeployPublishMethod" value="Web Deploy" />
+        <param name="system.MSDeployServiceUrl" value="localhost" />
+        <param name="system.PackageLocation" value="Platform%system.build.start.year%%system.build.start.month%%system.build.start.day%.zip" />
+        <param name="system.ServerUrl" value="192.168.0.119" />
+        <param name="system.SkipExtraFilesOnServer" value="false" />
+      </parameters>
+      <build-runners>
+        <runner id="RUNNER_4" name="VSL Build" type="VS.Solution">
+          <parameters>
+            <param name="build-file-path" value="%build.path%" />
+            <param name="msbuild.prop.Configuration" value="Release" />
+            <param name="msbuild_version" value="4.0" />
+            <param name="run-platform" value="x86" />
+            <param name="targets" value="Rebuild" />
+            <param name="toolsVersion" value="4.0" />
+            <param name="vs.version" value="vs2010" />
+          </parameters>
+        </runner>
+        <runner id="RUNNER_5" name="MS Build" type="MSBuild">
+          <parameters>
+            <param name="build-file-path" value="%build.file.directory%%build.file.projectName%" />
+            <param name="dotNetCoverage.NCover.HTMLReport.File.Sort" value="0" />
+            <param name="dotNetCoverage.NCover.HTMLReport.File.Type" value="1" />
+            <param name="dotNetCoverage.NCover.Reg" value="selected" />
+            <param name="dotNetCoverage.NCover.platformBitness" value="x86" />
+            <param name="dotNetCoverage.NCover.platformVersion" value="v2.0" />
+            <param name="dotNetCoverage.NCover3.Reg" value="selected" />
+            <param name="dotNetCoverage.NCover3.args" value="//ias .*" />
+            <param name="dotNetCoverage.NCover3.platformBitness" value="x86" />
+            <param name="dotNetCoverage.NCover3.platformVersion" value="v2.0" />
+            <param name="dotNetCoverage.NCover3.reporter.executable.args" value="//or FullCoverageReport:Html:{teamcity.report.path}" />
+            <param name="dotNetCoverage.PartCover.Reg" value="selected" />
+            <param name="dotNetCoverage.PartCover.includes" value="[*]*" />
+            <param name="dotNetCoverage.PartCover.platformBitness" value="x86" />
+            <param name="dotNetCoverage.PartCover.platformVersion" value="v2.0" />
+            <param name="msbuild_version" value="4.0" />
+            <param name="run-platform" value="x64" />
+            <param name="targets" value="Rebuild" />
+            <param name="toolsVersion" value="4.0" />
+          </parameters>
+        </runner>
+      </build-runners>
+      <vcs-settings checkout-mode="MANUAL" labeling-type="SUCCESSFUL_ONLY" labeling-pattern="build-%system.build.number%">
+        <vcs-entry-ref root-id="3" set-label="true" />
+      </vcs-settings>
+      <requirements />
+      <build-triggers />
+      <cleanup />
+    </settings>
+  </build-type>
+</project>
+

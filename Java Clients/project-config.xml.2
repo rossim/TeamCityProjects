@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project SYSTEM "../project-config.dtd">
+
+<project id="project2">
+  <parameters />
+  <build-type id="bt2" name="Build Java Clients">
+    <description />
+    <settings>
+      <options>
+        <option name="cleanBuild" value="true" />
+      </options>
+      <parameters>
+        <param name="git.private" value="C:\Users\Administrator\ssh\platform_rsa" />
+      </parameters>
+      <build-runners>
+        <runner id="RUNNER_1" name="OdpFast Client" type="Ant">
+          <parameters>
+            <param name="build-file-path" value="C:\Users\Administrator\Documents\Java Clients\Java\Netbeans\OdpMidp2\nbproject\build-impl.xml" />
+            <param name="target" value="deploy" />
+            <param name="target.jdk.home" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin" />
+            <param name="teamcity.coverage.emma.include.source" value="true" />
+            <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+            <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          </parameters>
+        </runner>
+        <runner id="RUNNER_3" name="Odp Lw Clients" type="Ant">
+          <parameters>
+            <param name="build-file-path" value="C:\Users\Administrator\Documents\Java Clients\Java\Netbeans\LWUIT\Odp\OdpLwuit\MIDP\build.xlm" />
+            <param name="target" value="deploy" />
+            <param name="target.jdk.home" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin" />
+            <param name="teamcity.coverage.emma.include.source" value="true" />
+            <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+            <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          </parameters>
+        </runner>
+      </build-runners>
+      <vcs-settings checkout-mode="ON_SERVER" labeling-type="SUCCESSFUL_ONLY" labeling-pattern="build-%system.build.number%">
+        <vcs-entry-ref root-id="1" set-label="true" />
+      </vcs-settings>
+      <requirements />
+      <build-triggers />
+      <cleanup />
+    </settings>
+  </build-type>
+</project>
+
