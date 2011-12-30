@@ -12,7 +12,7 @@
           <parameters>
             <param name="build-file-path" value="C:\Users\Administrator\Documents\Java Clients\Java\BlackBerryOld\OdpOld\build.xml" />
             <param name="target" value="rapc move" />
-            <param name="target.jdk.home" value="C:\Program Files (x86)\Java\jre7\bin" />
+            <param name="target.jdk.home" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin" />
             <param name="teamcity.coverage.emma.include.source" value="true" />
             <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
             <param name="teamcity.coverage.idea.includePatterns" value="*" />
@@ -22,7 +22,7 @@
           <parameters>
             <param name="build-file-path" value="C:\Users\Administrator\Documents\Java Clients\Java\BlackBerry\ComUnityOdp\build.xml" />
             <param name="target" value="rapc move" />
-            <param name="target.jdk.home" value="C:\Program Files (x86)\Java\jre7\bin" />
+            <param name="target.jdk.home" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin" />
             <param name="teamcity.coverage.emma.include.source" value="true" />
             <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
             <param name="teamcity.coverage.idea.includePatterns" value="*" />
